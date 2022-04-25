@@ -1,4 +1,7 @@
 import ReviewForm from '../../components/review-form/review-form';
+import UserBlock from '../../components/user-block/user-block';
+import {Link} from 'react-router-dom';
+import {AppRoute} from '../../const';
 
 function ReviewScreen(): JSX.Element {
   return (
@@ -12,11 +15,11 @@ function ReviewScreen(): JSX.Element {
 
         <header className="page-header">
           <div className="logo">
-            <a href="main.html" className="logo__link">
+            <Link to={AppRoute.Main} className="logo__link">
               <span className="logo__letter logo__letter--1">W</span>
               <span className="logo__letter logo__letter--2">T</span>
               <span className="logo__letter logo__letter--3">W</span>
-            </a>
+            </Link>
           </div>
 
           <nav className="breadcrumbs">
@@ -30,16 +33,7 @@ function ReviewScreen(): JSX.Element {
             </ul>
           </nav>
 
-          <ul className="user-block">
-            <li className="user-block__item">
-              <div className="user-block__avatar">
-                <img src="img/avatar.jpg" alt="User avatar" width="63" height="63"/>
-              </div>
-            </li>
-            <li className="user-block__item">
-              <a className="user-block__link">Sign out</a>
-            </li>
-          </ul>
+          <UserBlock />
         </header>
 
         <div className="film-card__poster film-card__poster--small">
