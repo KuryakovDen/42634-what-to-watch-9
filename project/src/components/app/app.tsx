@@ -1,7 +1,7 @@
-import MainScreen from '../../screens/main-screen/main-screen';
+import Loader from '../loader/loader';
 
 function App(): JSX.Element {
-  return <MainScreen title={'The Grand Budapest Hotel'} genre={'drama'} releaseDate={2019} />;
+  return <Loader />;
 }
 
 export default App;
