@@ -1,5 +1,7 @@
+import MainScreen from '../../screens/main-screen';
+
 function App(): JSX.Element {
-  return <p>Hello, world!</p>;
+  return <MainScreen />;
 }
 
 export default App;
