@@ -1,5 +1,9 @@
-const FILM_CARDS_COUNT = 7;
+export enum AppRoute {
+  Main = '/',
+  SignIn = '/login',
+  MyList = '/mylist',
+  Film = '/films/:id',
+  Review = '/films/:id/review',
+  Player = '/player/:id'
+}
 
-export {
-  FILM_CARDS_COUNT
-};

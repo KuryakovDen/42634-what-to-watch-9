@@ -131,7 +131,8 @@ function MainScreen({ title, genre, releaseDate }: MainScreenProps): JSX.Element
           </div>
         </footer>
       </div>
-    </>);
+    </>
+  );
 }
 
 export default MainScreen;
