@@ -1,5 +1,5 @@
-import FilmCard from '../../components/film-card/film-card';
 import GenresList from '../../components/genres-list/genres-list';
+import FilmsList from '../../components/films-list/films-list';
 
 type MainScreenProps = {
   title: string;
@@ -72,16 +72,8 @@ function MainScreen({ title, genre, releaseDate }: MainScreenProps): JSX.Element
       <div className="page-content">
         <section className="catalog">
           <h2 className="catalog__title visually-hidden">Catalog</h2>
-
           <GenresList />
-
-          <div className="catalog__films-list">
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-            <FilmCard />
-          </div>
-
+          <FilmsList />
           <div className="catalog__more">
             <button className="catalog__button" type="button">Show more</button>
           </div>
